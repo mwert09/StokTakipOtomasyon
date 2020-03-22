@@ -264,17 +264,7 @@ public class Main extends JFrame {
 		btnYonetim.setBorderPainted(false);
 		
 		
-		// BUTON YETKILERINI VERDIGIMIZ YER
-		if(Login.currentPersonel.Yetki == 1) {
-			btnYonetim.setEnabled(true);
-		}
-		else if(Login.currentPersonel.Yetki == 2) {
-			btnYonetim.setEnabled(false);
-		}
-		else if(Login.currentPersonel.Yetki == 3) {
-			btnYonetim.setEnabled(false);
-		}
-		// BUTON YETKILERINI VERDIGIMIZ YER
+		
 		
 		final JButton btnGoBack = new JButton("");
 		btnGoBack.setEnabled(false);
@@ -3213,17 +3203,77 @@ public class Main extends JFrame {
 
 		
 						// eger suanki ekran personel ekle ise 
-				if(panels.getComponent(2).isShowing()) {
+				if(panels.getComponent(1).isShowing()) {
+					cardLayout.show(panels, WelcomeCard);
+				}
+				else if(panels.getComponent(2).isShowing()) {
 					cardLayout.show(panels, YonetimCard);
 				}
 				else if(panels.getComponent(3).isShowing()) {
+					cardLayout.show(panels, PersonelCard);
+				}
+				else if(panels.getComponent(4).isShowing()) {
 					cardLayout.show(panels, WelcomeCard);
 				}
 				else if(panels.getComponent(5).isShowing()) {
-					cardLayout.show(panels, HammaddeCard);
+					cardLayout.show(panels, PersonelCard);
 				}
 				else if(panels.getComponent(6).isShowing()) {
 					cardLayout.show(panels, HammaddeCard);
+				}
+				else if(panels.getComponent(7).isShowing()) {
+					cardLayout.show(panels, HammaddeCard);
+				}
+				else if(panels.getComponent(8).isShowing()) {
+					cardLayout.show(panels, WelcomeCard);
+				}
+				else if(panels.getComponent(9).isShowing()) {
+					cardLayout.show(panels, UrunCard);
+				}
+				else if(panels.getComponent(10).isShowing()) {
+					cardLayout.show(panels, UrunCard);
+				}
+				else if(panels.getComponent(11).isShowing()) {
+					cardLayout.show(panels, YonetimCard);
+				}
+				else if(panels.getComponent(12).isShowing()) {
+					cardLayout.show(panels, YonetimCard);
+				}
+				else if(panels.getComponent(13).isShowing()) {
+					cardLayout.show(panels, YonetimCard);
+				}
+				else if(panels.getComponent(14).isShowing()) {
+					cardLayout.show(panels, WelcomeCard);
+				}
+				else if(panels.getComponent(15).isShowing()) {
+					cardLayout.show(panels, DepoCard);
+				}
+				else if(panels.getComponent(16).isShowing()) {
+					cardLayout.show(panels, YonetimCard);
+				}
+				else if(panels.getComponent(17).isShowing()) {
+					cardLayout.show(panels, YonetimCard);
+				}
+				else if(panels.getComponent(18).isShowing()) {
+					cardLayout.show(panels, YonetimCard);
+				}
+				else if(panels.getComponent(19).isShowing()) {
+					cardLayout.show(panels, YonetimCard);
+				}
+				else if(panels.getComponent(20).isShowing()) {
+					cardLayout.show(panels, YonetimCard);
+				}
+				else if(panels.getComponent(21).isShowing()) {
+					cardLayout.show(panels, YonetimCard);
+				}
+				else if(panels.getComponent(22).isShowing()) {
+					cardLayout.show(panels, WelcomeCard);
+				}
+				else if(panels.getComponent(23).isShowing()) {
+					cardLayout.show(panels, WelcomeCard);
+				}
+				else if(panels.getComponent(24).isShowing()) {
+					cardLayout.show(panels, WelcomeCard);
 				}
 				else {
 					cardLayout.show(panels, WelcomeCard);
@@ -4342,6 +4392,23 @@ public class Main extends JFrame {
 			}
 		});
 		
+		
+		// BUTON YETKILERINI VERDIGIMIZ YER
+				if(Login.currentPersonel.Yetki == 1) {
+					btnYonetim.setEnabled(true);
+					
+				}
+				else if(Login.currentPersonel.Yetki == 2) {
+					btnYonetim.setEnabled(false);
+					btnYonetim.hide();
+				}
+				else if(Login.currentPersonel.Yetki == 3) {
+					btnYonetim.setEnabled(false);
+					btnDepo.setEnabled(false);
+					btnDepo.hide();
+					btnYonetim.hide();
+				}
+				// BUTON YETKILERINI VERDIGIMIZ YER
 		
 	}// MAIN
 } // CLASS
