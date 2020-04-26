@@ -105,7 +105,8 @@ public class MySQLConnector {
 	public static void OpenCloseConnection(boolean tf) {
 		if(tf) {
 			try {
-				connection = DriverManager.getConnection("jdbc:mysql://www.db4free.net:3306/stoktakipproje1?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","stokadmin","123456789Stok");
+				
+				connection = DriverManager.getConnection("jdbc:mysql://www.db4free.net:3306/stoktakipproje2?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC","stokadmin2","123456789Stok");
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();

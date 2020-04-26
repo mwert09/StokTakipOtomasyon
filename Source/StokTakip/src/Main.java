@@ -39,8 +39,6 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableModel;
 
 import com.github.lgooddatepicker.components.DatePicker;
-import com.toedter.calendar.JCalendar;
-
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 import javax.swing.JRadioButton;
